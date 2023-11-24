@@ -1,8 +1,23 @@
+/*variables SASS*/
+/*interpolacion*/
 body {
- background-image: url("1154.jpg");
- background-size: 1000px;
- background-position: center;
+  background-image: url("1154.jpg");
+  background-size: 500px;
+  background-position: center;
 }
 
-
-
+.titulo {
+  font-family: "Vina Sans", sans-serif;
+  background-color: #E6E6E6;
+  /*Anidacion*/
+}
+.titulo .tprincipal {
+  font-size: 20px;
+  background-color: #2E2E2E;
+}
+.titulo .tprincipal .fondo {
+  width: 20% auto;
+}
+.titulo .buscador {
+  font-size: 20px;
+}/*# sourceMappingURL=styles.css.map */

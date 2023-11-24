@@ -84,13 +84,13 @@ function App() {
 
   return (
     <div>
-       <div class="card">
-        <div class="card-header text-white bg-dark">
-        <h2 className="text-center mt-5 mb-5">Trailer peliculas</h2>
+       <div class="card titulo">
+        <div class="tprincipal card-header text-white">
+        <h2 className="fondo text-center mt-5 mb-5">Trailer peliculas</h2>
         </div>
         <div class="card-body ">
       {/* el buscador */}
-      <form className="container mb-4" onSubmit={searchMovies}>
+      <form className="buscador container mb-4" onSubmit={searchMovies}>
         <input
           type="text"
           placeholder="Nombre Pelicula"

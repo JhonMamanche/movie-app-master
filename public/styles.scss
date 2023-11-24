@@ -1,0 +1,45 @@
+/*variables SASS*/
+$bgimagen: url("1154.jpg");
+$bgposicion: center;
+$bgsize: 500px;
+$textosize: 20px;
+$textostile: 'Vina Sans', sans-serif;
+
+/*interpolacion*/
+@mixin bgcolor($bgcolor){
+    background-color: $bgcolor;
+}
+@mixin size ($size){
+    width: $size;
+}
+
+
+body {
+    background-image: $bgimagen;
+    background-size: $bgsize;
+    background-position: $bgposicion;
+   }
+   
+   .titulo{
+    font-family: $textostile;
+    @include bgcolor (#E6E6E6);
+
+
+/*Anidacion*/
+    .tprincipal{
+        font-size: $textosize;
+        @include bgcolor (#2E2E2E);
+
+        .fondo{
+            @include size (20% auto);
+        }
+       }
+
+       .buscador{
+        font-size: $textosize;
+       }
+   }
+
+   
+
+   
